@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid red;
+            width: 200px;
+            margin: 10px;
+            float: left;
+        }
+        
+        .div2{width: 500px;}
+        .div3{clear: both;}
+        .div4{width: 500px;}
+    </style>
+</head>
+<body>
+    <h3>float 을 사용하면서 clear를 적절하게 사용해야 한다</h3>
+    <div class="div1"><img src="../img-04/pic1.jpg"></div>
+    <div class="div2"> inherit: 부모 요소에서 상속
+        left: 왼쪽에 부유하는 블록 박스를 생성. 페이지 내용은 박스 오른쪽에 위치하며 위에서 아래로 흐름.
+        right: 오른쪽에 부유하는 블록 박스를 생성. 페이지 내용은 박스 왼쪽에 위치하며 위에서 아래로 흐름. 이후 요소에 clear 속성이 있으면 페이지 흐름이 달라짐. none 이 아니라면 display 속성은 무시된다.
+        none - 요소를 부유시키지 않음
+        left와 right를 통해 부유속성을 지정시 display는 무시됩니다. (none은 제외)
+        또한 이후 요소에 clear 속성이 있으면 페이지 흐름이 달라집니다.</div>
+    <div class="div3"><img src="../img-04/pic2.jpg"></div>
+    <div class="div4"> inherit: 부모 요소에서 상속
+        left: 왼쪽에 부유하는 블록 박스를 생성. 페이지 내용은 박스 오른쪽에 위치하며 위에서 아래로 흐름.
+        right: 오른쪽에 부유하는 블록 박스를 생성. 페이지 내용은 박스 왼쪽에 위치하며 위에서 아래로 흐름. 이후 요소에 clear 속성이 있으면 페이지 흐름이 달라짐. none 이 아니라면 display 속성은 무시된다.
+        none - 요소를 부유시키지 않음
+        left와 right를 통해 부유속성을 지정시 display는 무시됩니다. (none은 제외)
+        또한 이후 요소에 clear 속성이 있으면 페이지 흐름이 달라집니다.</div>
+    
+</body>
+</html>
