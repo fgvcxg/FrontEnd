@@ -1,0 +1,98 @@
+.detail_main_div {
+    width: 830px;
+}
+
+#detail_main_div2 {
+    width: 830px;
+    height: 480px;
+}
+
+#detail_main_div2 h3 {
+    margin: 7px 0 7px 7px;
+}
+
+#detail_main_div2 h3 span {
+    color: yellowgreen;
+}
+
+.pointm {
+    height: 500px;
+}
+
+.product_img {
+    float: left;
+    margin-left: 50px;
+    margin-top: 20px;
+}
+
+/* 첫번째 줄 양식 */
+.pointm_div {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+
+.btn_pre {
+    margin-left: 100px;
+}
+
+.custom_prod {
+    width: 400px;
+    height: 400px;
+    float: left;
+}
+.custom_prod h2{
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+.custom_prod_table{
+    margin: 10px 0 0 0;
+}
+
+.custom_prod_table tr td {
+    height: 28px;
+    padding-left: 20px;
+}
+
+.detail_btn_table {
+    margin-top: 5px;
+}
+
+/*두번재 줄*/
+.product h2{
+    padding: 10px 0 0 50px;
+}
+.product_expl_div{
+    border: 1px solid rgb(70, 70, 70);
+    width: 700px;
+    height: 300px;
+    background-color: white;
+    margin: 20px 0 0 20px;
+}
+.product_expl_table{
+    margin: 50px 0 0 20px;
+
+}
+
+#tt{
+    font-size: 20px;
+}
+.tt1{
+    font-weight: bold;
+    padding: 0 10px 0 10px;
+}
+.tt2{
+    width: 600px;
+}
+.inquiry{
+    font-weight: bold;
+    color: blue;
+}
+
+/* 세번째 줄 */
+.caution_div h4{
+    margin: 20px 0 0 30px;
+}
+.caution_div a{
+    margin: 20px 0 0 30px;
+}

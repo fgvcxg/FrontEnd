@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <script>
+        //Javascript를 넣는 블락
+        function includeHTML(){
+    let z, elmnt, file, xhttp;
+ 
+    z = document.getElementsByTagName("*");
+    
+    for (let i = 0; i < z.length; i++) {
+      elmnt = z[i];
+      file = elmnt.getAttribute("data-include");
+      
+      if (file) {
+        xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4) {
+            if (this.status == 200) {elmnt.innerHTML = this.responseText;}
+            if (this.status == 404) {elmnt.innerHTML = "Page not found.";}
+            /* Remove the attribute, and call this function once more: */
+            elmnt.removeAttribute("data-include");
+            includeHTML();
+          }//if
+        }//onreadystatechange
+ 
+        xhttp.open("GET", file, true);
+        xhttp.send();
+        return;
+      }//if - file
+    }//for
+}//includeHTML
+    </script>
+</head>
+<body class="main_index_body">
+    <div class="wrapw">
+        <header>
+            <div data-include="header.html"></div>
+        </header>
+        <div class="clear"></div>
+        <aside>
+            <div data-include="index_aside.html"></div>
+        </aside>
+        <div class="clear"></div>
+        <main><div data-include="index_main.html"></div></main>
+        <footer><div data-include="footer.html"></div></footer>
+    </div> 
+
+    <script>
+        includeHTML();
+    </script>
+
+</body>
+</html>

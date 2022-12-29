@@ -1,0 +1,72 @@
+.cert_main_div {
+    width: 900px;
+    height: 700px;
+}
+
+.cert_main_div h3 {
+    margin: 20px 0 10px 20px;
+}
+
+.cert_main_div span {
+    color: yellowgreen;
+}
+
+.cert_main_div_img {
+    margin: 10px 0 0 35px;
+}
+
+
+/* 가운데 테이블 */
+.cert_main_div_table {
+    text-align: center;
+    border-collapse: collapse;
+}
+
+.cert_main_div_table td {
+    padding: 0 12px 0 12px;
+    font-size: 16px;
+}
+
+.cert_main_div_table tr {
+    height: 40px;
+}
+
+#tr1 {
+    background-color: rgb(199, 198, 198);
+}
+
+.tr11 {
+    font-weight: bold;
+    border: 1px solid rgb(145, 144, 144);
+}
+
+.tr12 {
+    border: 1px solid rgb(145, 144, 144);
+}
+
+.tr4 {
+    border: 1px solid rgb(145, 144, 144);
+}
+
+.tr4 td {
+    height: 90px;
+}
+
+.td_table_td1 {
+    float: right;
+    margin-top: 8px;
+}
+
+.tr5_span2 {
+    float: left;
+    font-weight: bold;
+}
+
+.tr111 {
+    font-weight: bold;
+}
+
+/* 버튼 그림 */
+.cert_main_div_img{
+    margin-left: 80px;
+}

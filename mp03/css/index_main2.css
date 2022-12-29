@@ -1,0 +1,59 @@
+.index_main2_body{
+    height: 500px;
+    width: 1100px;
+}
+
+.index_main2_div {
+    width: 1100px;
+    height: 450px;
+    float: left;
+}
+
+.main2_div_spec {
+    width: 600px;
+    height: 400px;
+    background-image: url('../img/special_shop.gif');
+    background-repeat: no-repeat;
+    float: left;
+}
+
+#main2_img {
+    border: 1px solid rgb(170, 170, 170);
+    padding: 20px 20px 20px 20px;
+    margin-top: 52px;
+    margin-left: 20px;
+}
+
+#main2_imgsub {
+    width: 395px;
+    height: 130px;
+}
+
+.main2_mini {
+    float: left;
+}
+
+/*오른쪽 작은 사진들*/
+.main2_div_land {
+    background-image: url('../img/landscape.gif');
+    background-repeat: no-repeat;
+}
+
+.main2_div_point {
+    background-image: url('../img/point_wallpaper.gif');
+    background-repeat: no-repeat;
+}
+
+.main2_div_child {
+    background-image: url('../img/children.gif');
+    background-repeat: no-repeat;
+}
+
+#main2_img1 {
+    margin-left: 129px;
+}
+
+.main2_img1,
+.main2_img2 {
+    margin-top: 5px;
+}

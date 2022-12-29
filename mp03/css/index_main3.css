@@ -1,0 +1,56 @@
+.index_main3_body{
+    width: 1000px;
+    height: 600px;
+}
+.clear{
+    clear: both;
+}
+.index_main3_div{
+    width: 1000px;
+    height: 500px;
+}
+.index_main3_div ul{
+    list-style-type: none;
+}
+.index_main3_div ul li{
+    margin-left: 0px;
+}
+.index_main3_div #first{
+    margin-left:100px;
+}
+
+.index_main3_div h3{
+    border-bottom: 2px solid yellowgreen;
+    padding: 0px 0 15px 15px;
+}
+.index_main3_div h3 span{
+    color: yellowgreen;
+    font-weight: bold;
+}
+
+/*작은 것들*/
+.index_main3_img{
+    width: 140px;
+}
+.index_main3_div .item{
+    float: left;
+    text-align: center;
+    margin-top: 5px;
+    width: 180px;
+}
+.index_main3_div .subject{
+    margin-top: 5px;
+    color: yellowgreen;
+    font-weight: bold;
+    font-size: 13px;
+}
+.index_main3_div .comment{
+    margin-top: 5px;
+    color: #888888;
+    font-size: 13px;
+}
+.index_main3_div .price{
+    margin-top: 5px;
+    margin-bottom: 5px;
+    font-size: 13px;
+}

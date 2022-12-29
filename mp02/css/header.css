@@ -1,0 +1,66 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.header_body {
+    width: 1000px;
+    height: 100px;
+    margin: 0 auto;
+}
+
+ul {
+    list-style-type: none;
+}
+
+
+/* 기본 설정 끝 */
+.header_logo{
+    float: left;
+    height: 80px;
+    width: 200px;
+    margin: 5px 0 0 20px;
+}
+
+.img {
+    float: left;
+    height: 80px;
+    width: 100px;
+    margin: 5px 0 0 20px;
+}
+
+
+
+.log {
+    float: right;
+    margin-right: 10px;
+}
+
+.log li {
+    float: left;
+    margin-left: 10px;
+    margin: 5px 5px 0 5px;
+    font-size: 15px;
+}
+
+.tab {
+    float: left;
+    background-image: url('../img/main_menu_bg.png');
+    width: 758px;
+    height: 38px;
+    margin-top: 20px;
+    margin-left: 10px;
+}
+
+.tab li {
+    float: left;
+    margin: 5px 30px 0 40px;
+}
+
+.clear {
+    clear: both;
+}
+
+table {
+    float: left;
+}
