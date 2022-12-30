@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ex3</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            border: 1px solid red;
+            width: 100%;
+            height: 800px;
+        }
+
+        header {
+            border: 1px solid red;
+            width: 100%;
+            height: 100px;
+            background-color: blue;
+            color: white;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        header>h1 {
+            margin-top: 25px;
+        }
+
+        nav {
+            border: 1px solid red;
+            width: 100%;
+            height: 80px;
+            background-color: plum;
+        }
+
+        nav>ul {
+            list-style-type: none;
+        }
+
+        nav>ul>li {
+            border: 1px solid red;
+            width: 200px;
+            float: left;
+            color: white;
+            font-weight: bold;
+            font-size: 20px;
+            text-align: center;
+            margin: 20px 0 0 40px;
+        }
+
+        main {
+            border: 1px solid red;
+            width: 100%;
+            height: 500px;
+        }
+
+        section {
+            border: 1px solid red;
+            text-align: center;
+            margin-top: 60px;
+        }
+
+        section>table {
+            margin: 0 auto;
+            margin-top: 50px;
+            width: 900px;
+            height: 250px;
+            border: 1px solid rgb(129, 129, 129);
+            font-weight: bold;
+            border-radius: 10px;
+        }
+
+        section>table td {
+            border: 2px solid rgb(82, 82, 82);
+
+            border-radius: 5px;
+        }
+
+        .text {
+            text-align: left;
+        }
+
+        footer {
+            border: 1px solid blue;
+            width: 100%;
+            height: 100px;
+            background: linear-gradient(90deg, blue, skyblue);
+            color: white;
+            font-size: 13px;
+        }
+
+        footer>h2 {
+            margin: 20px;
+        }
+
+        @media only screen and (max-width:1000px) {
+            body {}
+
+            nav {
+                width: 100%;
+                height: 150px;
+                background-color: plum;
+            }
+
+
+            nav>ul>li {
+                border: 1px solid red;
+                width: 100%;
+                color: white;
+                font-weight: bold;
+                font-size: 20px;
+                text-align: center;
+                margin: 0 auto;
+            }
+            footer{
+            background: linear-gradient(90deg, red, rgb(238, 112, 112));
+            }
+            footer > h2{
+                font-size: 15px;
+            }
+            section>table {
+            margin-top: 50px;
+            width: 600px;
+        }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>쇼핑몰 회원관리 VER 1.0</h2>
+    </header>
+    <nav>
+        <ul>
+            <li>회원등록</li>
+            <li>회원목록조회/수정</li>
+            <li>회원매출조회</li>
+            <li>홈으로</li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h1>쇼핑몰 회원 등록</h1>
+            <table>
+                <tr>
+                    <td class="title">회원번호(자동발생)</td>
+                    <td class="text"><input type="text" size="30px"></td>
+                </tr>
+                <tr>
+                    <td class="title">회원성명</td>
+                    <td class="text"><input type="text" size="30px"></td>
+                </tr>
+                <tr>
+                    <td class="title">회원주소</td>
+                    <td class="text"><input type="text" size="30px"></td>
+                </tr>
+                <tr>
+                    <td class="title">가입일자</td>
+                    <td class="text"><input type="text" size="30px"></td>
+                </tr>
+                <tr>
+                    <td class="title">고객등급[A:VIP,B:일반,C:직원]</td>
+                    <td class="text"><input type="text" size="30px"></td>
+                </tr>
+                <tr>
+                    <td class="title">도시코드</td>
+                    <td class="text"><input type="text" size="30px"></td>
+                </tr>
+                <tr>
+                    <td class="title" colspan="2">
+                        <button>등록</button>
+                        <button>조회</button>
+                    </td>
+                </tr>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <h2>HRDKOREA Copyright@2016 ALL right reserve.
+            Human Resources Development Service of Korea</h2>
+    </footer>
+
+</body>
+
+</html>
