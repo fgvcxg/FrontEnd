@@ -6,6 +6,7 @@
     width: 100%-2px;
     height: 1800px;
     background-color: #f2f0f0;
+    border: 1px solid red;
 }
 
 .index_wrap {
