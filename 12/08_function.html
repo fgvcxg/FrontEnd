@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        자바 : 메소드(함수) 오버로딩이 가능 했음
+            메소드(함수) 오버로딩 : 메소드 이름이 동일하고, 
+            인풋 매개변수의 갯수나 타입이 다를 경우 해당 메소드를 호출
+
+        자바 스크립트 : 메소드 오버로딩이 불가능하다
+    -->
+    <script>
+        //매개변수가 없는 함수
+        function add() {
+            var sum = 1;
+            return sum ;
+        }
+
+        //매개변수가 한개인 함수
+        function add(x) {
+            var sum = 2;
+            return sum ;
+        }
+
+        //매개변수가 두개인 함수
+        function add(x,y) {
+            var sum = 3;
+            return sum ;
+        }
+
+        //매개변수가 세개인 함수
+        function add(x,y,z) {
+            var sum = 4;
+            return sum ;
+        }
+
+        //함수 호출
+        var r0 = add();
+        var r1 = add(1);
+        var r2 = add(1,1);
+        var r3 = add(1,1,1);
+        var r4 = add(1,1,1,1);
+
+        //리턴 받은 값을 출력
+        document.write("함수 호출 인자 없음 : " + r0 + "<p/>");
+        document.write("함수 호출 인자 없음 : " + r1 + "<p/>");
+        document.write("함수 호출 인자 없음 : " + r2 + "<p/>");
+        document.write("함수 호출 인자 없음 : " + r3 + "<p/>");
+        document.write("함수 호출 인자 없음 : " + r4 + "<p/>");
+
+    </script>
+</body>
+</html>
