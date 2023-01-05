@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+        #toc_toggle_close{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    
+    목차 <br>
+    <span id="toc_toggle_open" onclick="openCloseToc()">안보이기</span> 
+    <span id="toc_toggle_close" onclick="closeCloseToc()">보이기</span> 
+
+    <ol id="olol">
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+    </ol>
+
+    <script>
+        var open1 = document.getElementById('toc_toggle_open');
+        var close1 = document.getElementById('toc_toggle_close');
+        var olol = document.getElementById('olol');
+
+        function openCloseToc(){
+            //안보이기를 클릭하면 ol태그를 안보이도록 한다
+            open1.style.display = 'none';
+            olol.style.display = 'none';
+            close1.style.display = 'block';
+        }
+
+        function closeCloseToc(){
+            //보이기를 클릭하면 ol태그를 보이도록 한다
+            open1.style.display = 'block';
+            olol.style.display = 'block';
+            close1.style.display = 'none';
+        }
+    </script>
+
+</body>
+</html>

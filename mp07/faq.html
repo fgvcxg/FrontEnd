@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #bbb {
+            display: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="divd" onclick="ccc(this)">
+            <aa id="ppp1">+</aa>'XHTML'이란 무엇인가요?
+        </div>
+        <bb id="bbb1">하이퍼 텍스트 마크업( HyperText Markup Language)입니다.</bb>
+        <hr>
+
+        <div id="divd" onclick="ccc(this)">
+            <aa id="ppp2">+</aa>'CSS'란 무엇인가요?
+        </div>
+        <bb id="bbb2">캐스캐이팅 스타일 시트(Cascading Style Sheets)입니다</bb>
+        <hr>
+
+        <div id="divd" onclick="ccc(this)">
+            <aa id="ppp3">+</aa>'JavaScript'란 무엇인가요?
+        </div>
+        <bb id="bbb3">자바스크립트는 객체(Object)를 기초로 하는 스크립트 프로그래밍 언어입니다</bb>
+        <hr>
+    </div>
+    <script>
+        var divd = document.getElementById('divd');
+
+        var aaa1 = 0;
+        var ppp1 = document.getElementById('ppp1');
+        var bbb1 = document.getElementById('bbb1');
+
+        var aaa2 = 0;
+        var ppp2 = document.getElementById('ppp2');
+        var bbb2 = document.getElementById('bbb2');
+
+        var aaa3 = 0;
+        var ppp3 = document.getElementById('ppp3');
+        var bbb3 = document.getElementById('bbb3');
+
+        for(var i =0;i<divd.length;i++){
+            divd[i].addEventListener("click", aa)
+        }
+
+        function ccc(ddd) {
+            if (aaa == 0) {
+                ppp.textContent = '▼';
+                bbb.style.display = 'block'
+                aaa++;
+            } else{
+                ppp.textContent = '▲';
+                bbb.style.display = 'none'
+                aaa--;
+            }
+        }
+    </script>
+</body>
+</html>

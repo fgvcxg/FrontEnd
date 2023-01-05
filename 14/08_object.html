@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!--
+        객체의 속성을 추가 / 제거
+    -->
+    <p>Hong`s car</p>
+    <p id="carname"></p>
+    <p id="carcolor"></p>
+    <p id="carspeed"></p>
+    <p id="price"></p>
+    <p id="model"></p>
+    <hr>
+    <p>Kim`s car</p>
+    <p id="carname2"></p>
+    <p id="carcolor2"></p>
+    <p id="carspeed2"></p>
+    <hr>
+    <p>Kim`s car</p>
+    <p id="carname3"></p>
+    <p id="carcolor3"></p>
+    <p id="carspeed3"></p>
+
+    <script>
+        //함수의 생성자를 사용해서 객체 생성 : 여러개의 객체를 매개변수를 사용해서 생성
+        function Car (name, color, speed){
+            //속성
+            this.name = name;
+            this.color = color;
+            this.speed = speed;
+
+            //메소드(함수)
+            this.speedup = function() {
+                return this.speed +10;
+            };
+            this.speeddown = function(){
+                return this.speed -10;
+            };
+        };
+
+        var HongCar = new Car('sonata', 'blue',100);
+        HongCar.price = 3000
+        HongCar.model = 'qweqwe'
+        delete HongCar.name;
+        var KimCar = new Car('jeep','red',40);
+        var LeeCar = new Car('grandure','black',30);
+
+        var cname = document.getElementById('carname');
+        var colname = document.getElementById('carcolor');
+        var cspeed = document.getElementById('carspeed');
+        var cprice = document.getElementById('price');
+        var cmodel = document.getElementById('model');
+
+        cname.textContent = '자동차 이름 : ' + HongCar.name;
+        colname.textContent = '자동차 이름 : ' + HongCar.color;
+        cspeed.textContent = '자동차 이름 : ' + HongCar.speed;
+        cprice.textContent = '자동차 이름 : ' + HongCar.price;
+        cmodel.textContent = '자동차 이름 : ' + HongCar.model;
+
+        var cname = document.getElementById('carname2');
+        var colname = document.getElementById('carcolor2');
+        var cspeed = document.getElementById('carspeed2');
+
+        cname.textContent = '자동차 이름 : ' + KimCar.name;
+        colname.textContent = '자동차 이름 : ' + KimCar.color;
+        cspeed.textContent = '자동차 이름 : ' + KimCar.speed;
+
+        var cname = document.getElementById('carname3');
+        var colname = document.getElementById('carcolor3');
+        var cspeed = document.getElementById('carspeed3');
+
+        cname.textContent = '자동차 이름 : ' + LeeCar.name;
+        colname.textContent = '자동차 이름 : ' + LeeCar.color;
+        cspeed.textContent = '자동차 이름 : ' + LeeCar.speed;
+
+    </script>
+    
+</body>
+</html>

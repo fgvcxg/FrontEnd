@@ -1,0 +1,87 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .qwe{
+            float: left;
+        }
+        .ss{
+            width: 100px;
+        }
+        .table2{
+            width: 300px;
+            height: 280px;
+            margin-left: 100px;
+            margin-top: 100px;
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <table class="qwe">
+        <tr>
+            <td><img id="bb" src="./img/coffee-pink.jpg"> </td>
+        </tr>
+        <tr>
+            <td>
+                <img class="ss" src="./img/coffee-pink.jpg">
+                <img class="ss" src="./img/coffee-blue.jpg">
+                <img class="ss" src="./img/coffee-gray.jpg">
+            </td>
+        </tr>
+    </table>
+    <table class="table2">
+        <tr>
+            <td>상품명 : 에디오피아 게뎁</td>
+        </tr>
+        <tr>
+            <td class="bb">판매가 : 9000원</td>
+        </tr>
+        <tr>
+            <td>배송비 : 3000원</td>
+        </tr>
+        <tr>
+            <td>(50,000원 이상 구매시 무료)</td>
+        </tr>
+        <tr>
+            <td>적립금 : 180원</td>
+        </tr>
+        <tr>
+            <td class="btn">로스팅 : 2023.01.04</td>
+        </tr>
+        <tr>
+            <td><button>장바구니 담기</button></td>
+        </tr>
+        <tr>
+            <td class="bb">상세 설명 보기</td>
+        </tr>
+    </table>
+
+    <script>
+        /*
+            qquerySelector() : css - id : #, class : .
+
+            getElementById() : 태그 내부에 적용된 id
+            getElementsByClassName() : 태그 내부에 적용된 class
+        */
+        var ss = document.getElementsByClassName("ss");
+        var bb = document.getElementById("bb");
+
+        for(var i =0;i<ss.length;i++){
+            ss[i].addEventListener("click", aa)
+        }
+        function aa(){
+            var bbb = this.getAttribute("src");
+
+            bb.setAttribute("src", bbb);
+        }
+
+    </script>
+    
+</body>
+</html>
